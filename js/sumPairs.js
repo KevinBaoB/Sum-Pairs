@@ -1,4 +1,4 @@
-const sumPairs = function (arr, target) {
+exports.sumPairs = function (arr, target) {
   let res = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr.indexOf(target - arr[i], i + 1) > 0) {
@@ -30,6 +30,6 @@ const sumPairs = function (arr, target) {
 //   return res;
 // };
 
-console.log(sumPairs([1, 2, 3, 4, 5], 9));
-console.log(sumPairs([1, 2, 3, 4, 5], 7));
-console.log(sumPairs([3, 1, 5, 8, 2], 27));
+// console.log(sumPairs([1, 2, 3, 4, 5], 9));
+// console.log(sumPairs([1, 2, 3, 4, 5], 7));
+// console.log(sumPairs([3, 1, 5, 8, 2], 27));
